@@ -1,5 +1,5 @@
 streamlit
 pandas >= 0.19
-seaborn == 0.7.0
+seaborn >= 0.7.0
 matplotlib >= 1.4.3
 plotly==4.12.0
