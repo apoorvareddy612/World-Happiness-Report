@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-#st.set_option('deprecation.showPyplotGlobalUse', False)
+st.set_option('deprecation.showPyplotGlobalUse', False)
 
 df = pd.read_csv('data/happiness_combined_year copy 2.csv')
 df = df.drop(columns=['Unnamed: 0'],axis=1)
@@ -46,40 +46,7 @@ def info():
 
 
 
-	# ind = df[df['Country'] == 'India']
-
-	# sns.pointplot(x = "Year",
- #              y = "Happiness Rank",
- #              data = ind)
-	# plt.title("India")
-	# st.pyplot()
-	# plot_fac(ind)
-	# st.pyplot()
 	
-	# fin = df[df['Country'] == 'Finland']
-	# sns.pointplot(x = "Year",
- #              y = "Happiness Rank",
- #              data = fin)
-	# plt.title("Finland")
-
-	# st.pyplot()
-	# plot_fac(fin)
-	# st.pyplot()
-
-	# us = df[df['Country'] == 'United States']
-
-	# sns.pointplot(x = "Year",
- #              y = "Happiness Rank",
- #              data = us)
-	# plt.title("United States")
-
-	# st.pyplot()
-
-	# plot_fac(us)
-
-	# st.pyplot()
-
-	    
 	
 
     
