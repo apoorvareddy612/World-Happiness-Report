@@ -27,7 +27,7 @@ def plot(lst,data=df):
 		st.pyplot()
 
 def info():
-	df = pd.read_csv('/Users/apoorva/Desktop/CODES/Notebook/happiness_combined_year copy.csv')
+	df = pd.read_csv('data/happiness_combined_year copy 2.csv')
 	df = df.drop(columns=['Unnamed: 0'],axis=1)
 
 	COUNTRIES = df['Country'].unique()
