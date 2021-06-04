@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 #st.set_option('deprecation.showPyplotGlobalUse', False)
 
-df = pd.read_csv('/Users/apoorva/Desktop/CODES/Notebook/happiness_combined_year copy.csv')
+df = pd.read_csv('/Users/apoorva/Desktop/CODES/Heroku/data/happiness_combined_year copy.csv')
 df = df.drop(columns=['Unnamed: 0'],axis=1)
 
 def plot_fac(df):
