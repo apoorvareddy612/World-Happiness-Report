@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 def info():
-	df = pd.read_csv('/Users/apoorva/Desktop/CODES/Notebook/avg.csv')
+	df = pd.read_csv('data/avg.csv')
 	
 
 	x = st.sidebar.selectbox(
