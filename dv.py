@@ -10,6 +10,12 @@ import SessionState
 import cba
 import avg
 import spatial
+import con
+import graph
+import rank
+import seaborn as sns
+import matplotlib.pyplot as plt
+import histo
 def homepage():
 	st.markdown("<h1 style='text-align: center;'>WORLD HAPPINESS REPORT</h1>", unsafe_allow_html=True)
 	st.markdown("<span style=“background-color:#121922”>",unsafe_allow_html=True)
@@ -37,7 +43,7 @@ def createlayout():
 
     app_check = {k: v[0] if isinstance(v, list) else v for k, v in app_check.items()}
     st.sidebar.title("Menu")
-    page_list = ["Homepage", "Country based analysis", "Average based analysis", "Spatial based analysis"]
+    page_list = ["Homepage", "Country based analysis", "Average based analysis", "Spatial based analysis","Heatmap of Continents","Scatter plots","Rank based Analysis","Histogram of Scores Distribution"]
 #     default_selectbox = int(app_check["selectbox"]) if "selectbox" in app_check else 0
     default_selectbox = int(app_check["selectbox"]) if "selectbox" in app_check else 0
     app_mode = st.sidebar.selectbox("Please select a page", page_list,index = default_selectbox)
@@ -55,6 +61,14 @@ def createlayout():
             avg.load_page()
         elif app_mode == "Spatial based analysis":
             spatial.viz_page()
+	elif app_mode == "Heatmap of Continents":
+            con.load_page()
+        elif app_mode == "Scatter plots":
+            graph.load_page()
+        elif app_mode == "Rank based Analysis":
+            rank.load_page()
+        elif app_mode == "Histogram of Scores Distribution":
+            histo.load_page()
 
 def main():
     createlayout()
