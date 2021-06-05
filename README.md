@@ -20,9 +20,9 @@ We have visualized the dataset all way possible trying to interpret and analyse 
 
 **Generosity**
 
-![](
+
 https://user-images.githubusercontent.com/61325120/120902288-17e3df00-c65d-11eb-8d4e-167265bfb461.mov
 
-)
+
 
 
