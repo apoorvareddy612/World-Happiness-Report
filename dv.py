@@ -16,6 +16,13 @@ import rank
 import seaborn as sns
 import matplotlib.pyplot as plt
 import histo
+
+def side_bar_homepage():
+    st.sidebar.title("Team Members")
+    st.sidebar.info("""Apoorva Reddy 19BCE2196""")
+    st.sidebar.info("""Shubh Almal 19BCE2130""")
+    st.sidebar.info("""Diva Bhatia 19BCE2452""")
+
 def homepage():
 	st.markdown("<h1 style='text-align: center;'>WORLD HAPPINESS REPORT</h1>", unsafe_allow_html=True)
 	st.markdown("<span style=“background-color:#121922”>",unsafe_allow_html=True)
@@ -72,7 +79,7 @@ def createlayout():
 
 def main():
     createlayout()
-    
+    side_bar_homepage()
 
 if __name__ == "__main__":
     main()
