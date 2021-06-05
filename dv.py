@@ -36,7 +36,7 @@ def homepage():
 		st.markdown('**'+i+'**')
 
 	st.write("We have used these visualization tools:")
-	st.image("/Users/apoorva/Desktop/tool.png",use_column_width=True)
+	st.image("Image/tool.png",use_column_width=True)
     	
 
 
