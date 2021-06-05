@@ -63,11 +63,11 @@ def createlayout():
             spatial.viz_page()
 	elif app_mode == "Heatmap of Continents":
             con.load_page()
-        elif app_mode == "Scatter plots":
+	elif app_mode == "Scatter plots":
             graph.load_page()
-        elif app_mode == "Rank based Analysis":
+	elif app_mode == "Rank based Analysis":
             rank.load_page()
-        elif app_mode == "Histogram of Scores Distribution":
+	elif app_mode == "Histogram of Scores Distribution":
             histo.load_page()
 
 def main():
