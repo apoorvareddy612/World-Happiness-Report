@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 def info():
-	df = pd.read_csv('data/happiness_combined_year copy.csv')
+	df = pd.read_csv('data/happiness_combined_year copy 2.csv')
 	df = df.drop(columns=['Unnamed: 0'],axis=1)
 
 	rank = list(df['Happiness Rank'].unique())
