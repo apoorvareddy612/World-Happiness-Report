@@ -7,3 +7,11 @@ The World Happiness Report is a publication of the Sustainable Development Solut
 **Data source and information about data collect can be found on [Kaggle](https://www.kaggle.com/unsdsn/world-happiness)**
 
 We have visualized the dataset all way possible trying to interpret and analyse using diffrent factors which is playing important role in deciding the happiness score.There are different criteria defined in the report:
+
+**Economy (GDP per Capita)**
+**Family**
+**Health (Life Expectancy)**
+**Freedom**
+**Trust (Government Corruption)**
+**Generosity**
+
