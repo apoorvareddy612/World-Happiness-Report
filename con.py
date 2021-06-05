@@ -6,7 +6,7 @@ import numpy as np
 
 
 def info():
-	df = pd.read_csv('/Users/apoorva/Desktop/CODES/Notebook/data.csv')
+	df = pd.read_csv('data/data1.csv')
 	df.drop(['Unnamed: 0'],axis=1)
 
 	Region = ['Europe','Asia','America','Africa']
