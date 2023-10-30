@@ -4,6 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 def info():
+	st.set_option('deprecation.showPyplotGlobalUse', False)
 	df = pd.read_csv('data/happiness_combined_year copy 2.csv')
 	df = df.drop(columns=['Unnamed: 0'],axis=1)
 	avg = df.groupby(['Country']).mean().sort_values(by='Happiness Score',ascending=False).reset_index()

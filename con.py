@@ -24,9 +24,9 @@ def info():
 			mask = np.zeros_like(corr)
 			mask[np.triu_indices_from(mask)] = True
 			with sns.axes_style("white"):
-			    f, ax = plt.subplots(figsize=(7, 5))
-			    ax = sns.heatmap(corr, mask=mask, vmax=.9, square=True)
-			    plt.title("Happiness Matrix in Europe")
+				f, ax = plt.subplots(figsize=(7, 5))
+				ax = sns.heatmap(corr, mask=mask, vmax=.9, square=True)
+				plt.title("Happiness Matrix in Europe")
 			st.pyplot()
 
 		elif i == 'Asia':
@@ -34,9 +34,9 @@ def info():
 			mask = np.zeros_like(corr)
 			mask[np.triu_indices_from(mask)] = True
 			with sns.axes_style("white"):
-			    f, ax = plt.subplots(figsize=(7, 5))
-			    ax = sns.heatmap(corr, mask=mask, vmax=.9, square=True)
-			    plt.title("Happiness Matrix in Asia")
+				f, ax = plt.subplots(figsize=(7, 5))
+				ax = sns.heatmap(corr, mask=mask, vmax=.9, square=True)
+				plt.title("Happiness Matrix in Asia")
 			st.pyplot()
 
 		elif i == 'America':
@@ -44,9 +44,9 @@ def info():
 			mask = np.zeros_like(corr)
 			mask[np.triu_indices_from(mask)] = True
 			with sns.axes_style("white"):
-			    f, ax = plt.subplots(figsize=(7, 5))
-			    ax = sns.heatmap(corr, mask=mask, vmax=.9, square=True)
-			    plt.title("Happiness Matrix in America")
+				f, ax = plt.subplots(figsize=(7, 5))
+				ax = sns.heatmap(corr, mask=mask, vmax=.9, square=True)
+				plt.title("Happiness Matrix in America")
 			st.pyplot()
 
 		elif i == 'Africa':
@@ -54,9 +54,9 @@ def info():
 			mask = np.zeros_like(corr)
 			mask[np.triu_indices_from(mask)] = True
 			with sns.axes_style("white"):
-			    f, ax = plt.subplots(figsize=(7, 5))
-			    ax = sns.heatmap(corr, mask=mask, vmax=.9, square=True)
-			    plt.title("Happiness Matrix in Africa")
+				f, ax = plt.subplots(figsize=(7, 5))
+				ax = sns.heatmap(corr, mask=mask, vmax=.9, square=True)
+				plt.title("Happiness Matrix in Africa")
 			st.pyplot()
 
 		

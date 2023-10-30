@@ -1,6 +1,8 @@
-import streamlit.report_thread as ReportThread
-from streamlit.server.server import Server
-
+# import streamlit.report_thread as ReportThread
+# from streamlit.server.server import Server
+from streamlit.runtime.scriptrunner.script_run_context import get_script_run_ctx
+from streamlit.web.server import Server
+from streamlit.runtime import get_instance
 
 class SessionState():
     def __init__(self, **kwargs):
@@ -10,9 +12,10 @@ class SessionState():
 
 
 def get(**kwargs):
-
-    session_id = ReportThread.get_report_ctx().session_id
-    session_info = Server.get_current()._get_session_info(session_id)
+    runtime = get_instance()
+    session_id = get_script_run_ctx().session_id #.get_report_ctx()
+ #    session_info = Server._get_session_info(session_id) #.get_current()
+    session_info = runtime._session_mgr.get_session_info(session_id)
 
     if session_info is None:
         raise RuntimeError('Could not get Streamlit session object.')
